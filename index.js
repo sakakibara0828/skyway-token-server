@@ -9,7 +9,7 @@ const SKYWAY_API_KEY = process.env.SKYWAY_API_KEY; // Railway の Variables に�
 
 app.get("/token", async (req, res) => {
   try {
-    const response = await fetch("https://api.skyway.ntt.com/auth/v1/tokens", {
+    const response = await fetch("https://api.skyway.io/v1/tokens", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
